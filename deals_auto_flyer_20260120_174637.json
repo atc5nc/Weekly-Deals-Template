@@ -1,0 +1,1262 @@
+[
+  {
+    "deal_id": 1,
+    "page": 1,
+    "retailer": "HEB",
+    "product_name": "Boneless Pork Loin",
+    "brand": null,
+    "category": "MEAT",
+    "price": {
+      "amount": 1.97,
+      "unit": "lb",
+      "display": "$1.97 lb",
+      "is_multibuy": false,
+      "multibuy_details": null,
+      "original_price": null,
+      "savings_amount": null,
+      "savings_percent": null,
+      "price_per_unit": 1.97
+    },
+    "size_quantity": "per lb",
+    "conditions": {},
+    "promotion_type": "standard_sale",
+    "promotion_group_id": null,
+    "special_notes": "Texas-Size Pack",
+    "extraction_confidence": "HIGH",
+    "uncertainty_flags": [],
+    "price_visibility": "fully_visible",
+    "name_visibility": "fully_visible"
+  },
+  {
+    "deal_id": 2,
+    "page": 1,
+    "retailer": "HEB",
+    "product_name": "Navel Oranges",
+    "brand": null,
+    "category": "PRODUCE",
+    "price": {
+      "amount": 0.87,
+      "unit": "lb",
+      "display": "$0.87 lb",
+      "is_multibuy": false,
+      "multibuy_details": null,
+      "original_price": null,
+      "savings_amount": null,
+      "savings_percent": null,
+      "price_per_unit": 0.87
+    },
+    "size_quantity": "per lb",
+    "conditions": {},
+    "promotion_type": "standard_sale",
+    "promotion_group_id": null,
+    "special_notes": "Large",
+    "extraction_confidence": "HIGH",
+    "uncertainty_flags": [],
+    "price_visibility": "fully_visible",
+    "name_visibility": "fully_visible"
+  },
+  {
+    "deal_id": 3,
+    "page": 1,
+    "retailer": "HEB",
+    "product_name": "Hill Country Fare Seasoned Beef for Fajitas",
+    "brand": "Hill Country Fare",
+    "category": "MEAT",
+    "price": {
+      "amount": 4.97,
+      "unit": "lb",
+      "display": "$4.97 lb",
+      "is_multibuy": false,
+      "multibuy_details": null,
+      "original_price": null,
+      "savings_amount": null,
+      "savings_percent": null,
+      "price_per_unit": 4.97
+    },
+    "size_quantity": "per lb",
+    "conditions": {},
+    "promotion_type": "standard_sale",
+    "promotion_group_id": null,
+    "special_notes": "Value pack",
+    "extraction_confidence": "HIGH",
+    "uncertainty_flags": [],
+    "price_visibility": "fully_visible",
+    "name_visibility": "fully_visible"
+  },
+  {
+    "deal_id": 4,
+    "page": 1,
+    "retailer": "HEB",
+    "product_name": "Pink Lady Apples",
+    "brand": null,
+    "category": "PRODUCE",
+    "price": {
+      "amount": 0.97,
+      "unit": "lb",
+      "display": "$0.97 lb",
+      "is_multibuy": false,
+      "multibuy_details": null,
+      "original_price": null,
+      "savings_amount": null,
+      "savings_percent": null,
+      "price_per_unit": 0.97
+    },
+    "size_quantity": "per lb",
+    "conditions": {},
+    "promotion_type": "standard_sale",
+    "promotion_group_id": null,
+    "special_notes": null,
+    "extraction_confidence": "HIGH",
+    "uncertainty_flags": [],
+    "price_visibility": "fully_visible",
+    "name_visibility": "fully_visible"
+  },
+  {
+    "deal_id": 5,
+    "page": 1,
+    "retailer": "HEB",
+    "product_name": "Broccoli Crowns",
+    "brand": null,
+    "category": "PRODUCE",
+    "price": {
+      "amount": 1.47,
+      "unit": "lb",
+      "display": "$1.47 lb",
+      "is_multibuy": false,
+      "multibuy_details": null,
+      "original_price": null,
+      "savings_amount": null,
+      "savings_percent": null,
+      "price_per_unit": 1.47
+    },
+    "size_quantity": "per lb",
+    "conditions": {},
+    "promotion_type": "standard_sale",
+    "promotion_group_id": null,
+    "special_notes": null,
+    "extraction_confidence": "HIGH",
+    "uncertainty_flags": [],
+    "price_visibility": "fully_visible",
+    "name_visibility": "fully_visible"
+  },
+  {
+    "deal_id": 6,
+    "page": 1,
+    "retailer": "HEB",
+    "product_name": "H-E-B Fresh Sausage Links",
+    "brand": "H-E-B",
+    "category": "MEAT",
+    "price": {
+      "amount": 7.0,
+      "unit": "2 pk",
+      "display": "$7.00 2 pk",
+      "is_multibuy": true,
+      "multibuy_details": {
+        "quantity_required": 2,
+        "total_cost": 7.0,
+        "per_unit_cost": 3.5,
+        "format": "2/$7"
+      },
+      "original_price": null,
+      "savings_amount": 2.0,
+      "savings_percent": null,
+      "price_per_unit": 3.5
+    },
+    "size_quantity": "2 pk",
+    "conditions": {
+      "requires_digital_coupon": true
+    },
+    "promotion_type": "multi_buy",
+    "promotion_group_id": null,
+    "special_notes": "Save $2 with yellow coupon",
+    "extraction_confidence": "HIGH",
+    "uncertainty_flags": [],
+    "price_visibility": "fully_visible",
+    "name_visibility": "fully_visible"
+  },
+  {
+    "deal_id": 7,
+    "page": 1,
+    "retailer": "HEB",
+    "product_name": "H-E-B Chopped Salad Bowl",
+    "brand": "H-E-B",
+    "category": "PRODUCE",
+    "price": {
+      "amount": 2.97,
+      "unit": "ea",
+      "display": "$2.97 ea",
+      "is_multibuy": false,
+      "multibuy_details": null,
+      "original_price": null,
+      "savings_amount": null,
+      "savings_percent": null,
+      "price_per_unit": null
+    },
+    "size_quantity": "5.75\u20137.25 oz",
+    "conditions": {},
+    "promotion_type": "standard_sale",
+    "promotion_group_id": null,
+    "special_notes": "Assorted varieties",
+    "extraction_confidence": "HIGH",
+    "uncertainty_flags": [],
+    "price_visibility": "fully_visible",
+    "name_visibility": "fully_visible"
+  },
+  {
+    "deal_id": 8,
+    "page": 1,
+    "retailer": "HEB",
+    "product_name": "Hill Country Fare Bacon",
+    "brand": "Hill Country Fare",
+    "category": "MEAT",
+    "price": {
+      "amount": 7.0,
+      "unit": "2 pk",
+      "display": "$7.00 2 pk",
+      "is_multibuy": true,
+      "multibuy_details": {
+        "quantity_required": 2,
+        "total_cost": 7.0,
+        "per_unit_cost": 3.5,
+        "format": "2/$7"
+      },
+      "original_price": null,
+      "savings_amount": null,
+      "savings_percent": null,
+      "price_per_unit": 3.5
+    },
+    "size_quantity": "12 oz",
+    "conditions": {},
+    "promotion_type": "multi_buy",
+    "promotion_group_id": null,
+    "special_notes": "Assorted varieties",
+    "extraction_confidence": "HIGH",
+    "uncertainty_flags": [],
+    "price_visibility": "fully_visible",
+    "name_visibility": "fully_visible"
+  },
+  {
+    "deal_id": 9,
+    "page": 1,
+    "retailer": "HEB",
+    "product_name": "Jumbo Raw White Shrimp",
+    "brand": null,
+    "category": "MEAT",
+    "price": {
+      "amount": 5.97,
+      "unit": "lb",
+      "display": "$5.97 lb",
+      "is_multibuy": false,
+      "multibuy_details": null,
+      "original_price": null,
+      "savings_amount": null,
+      "savings_percent": null,
+      "price_per_unit": 5.97
+    },
+    "size_quantity": "per lb",
+    "conditions": {},
+    "promotion_type": "standard_sale",
+    "promotion_group_id": null,
+    "special_notes": "16\u201325 ct, previously frozen",
+    "extraction_confidence": "HIGH",
+    "uncertainty_flags": [],
+    "price_visibility": "fully_visible",
+    "name_visibility": "fully_visible"
+  },
+  {
+    "deal_id": 10,
+    "page": 1,
+    "retailer": "HEB",
+    "product_name": "H-E-B Wild Caught West Coast Flounder Fillets",
+    "brand": "H-E-B",
+    "category": "MEAT",
+    "price": {
+      "amount": 12.97,
+      "unit": "lb",
+      "display": "$12.97 lb",
+      "is_multibuy": false,
+      "multibuy_details": null,
+      "original_price": null,
+      "savings_amount": null,
+      "savings_percent": null,
+      "price_per_unit": 12.97
+    },
+    "size_quantity": "per lb",
+    "conditions": {},
+    "promotion_type": "standard_sale",
+    "promotion_group_id": null,
+    "special_notes": "Fresh",
+    "extraction_confidence": "HIGH",
+    "uncertainty_flags": [],
+    "price_visibility": "fully_visible",
+    "name_visibility": "fully_visible"
+  },
+  {
+    "deal_id": 1,
+    "page": 1,
+    "retailer": "HEB",
+    "product_name": "H-E-B Texas Roots Juice Oranges",
+    "brand": "H-E-B",
+    "category": "PRODUCE",
+    "price": {
+      "amount": null,
+      "unit": "8 lb",
+      "display": null,
+      "is_multibuy": false,
+      "multibuy_details": null,
+      "original_price": null,
+      "savings_amount": 1,
+      "savings_percent": null,
+      "price_per_unit": null
+    },
+    "size_quantity": "8 lb bag",
+    "conditions": {
+      "requires_card": false,
+      "requires_digital_coupon": false,
+      "requires_membership": false,
+      "purchase_limit": null,
+      "multi_purchase_required": false,
+      "valid_dates": "01/14-01/20"
+    },
+    "promotion_type": "standard_sale",
+    "promotion_group_id": null,
+    "special_notes": "Save $1 with yellow coupon in-store or online",
+    "extraction_confidence": "MEDIUM",
+    "uncertainty_flags": [
+      "price_not_visible"
+    ],
+    "price_visibility": "not_visible",
+    "name_visibility": "fully_visible"
+  },
+  {
+    "deal_id": 2,
+    "page": 1,
+    "retailer": "HEB",
+    "product_name": "H-E-B Texas Roots Grapefruit",
+    "brand": "H-E-B",
+    "category": "PRODUCE",
+    "price": {
+      "amount": null,
+      "unit": "10 lb",
+      "display": null,
+      "is_multibuy": false,
+      "multibuy_details": null,
+      "original_price": null,
+      "savings_amount": 1,
+      "savings_percent": null,
+      "price_per_unit": null
+    },
+    "size_quantity": "10 lb bag",
+    "conditions": {
+      "requires_card": false,
+      "requires_digital_coupon": false,
+      "requires_membership": false,
+      "purchase_limit": null,
+      "multi_purchase_required": false,
+      "valid_dates": "01/14-01/20"
+    },
+    "promotion_type": "standard_sale",
+    "promotion_group_id": null,
+    "special_notes": "Save $1 with yellow coupon in-store or online",
+    "extraction_confidence": "MEDIUM",
+    "uncertainty_flags": [
+      "price_not_visible"
+    ],
+    "price_visibility": "not_visible",
+    "name_visibility": "fully_visible"
+  },
+  {
+    "deal_id": 3,
+    "page": 1,
+    "retailer": "HEB",
+    "product_name": "Higher Harvest by H-E-B Products",
+    "brand": "Higher Harvest",
+    "category": "PANTRY",
+    "price": {
+      "amount": null,
+      "unit": null,
+      "display": null,
+      "is_multibuy": false,
+      "multibuy_details": null,
+      "original_price": null,
+      "savings_amount": null,
+      "savings_percent": 20,
+      "price_per_unit": null
+    },
+    "size_quantity": null,
+    "conditions": {
+      "requires_card": false,
+      "requires_digital_coupon": false,
+      "requires_membership": false,
+      "purchase_limit": null,
+      "multi_purchase_required": false,
+      "valid_dates": "01/14-01/20"
+    },
+    "promotion_type": "standard_sale",
+    "promotion_group_id": null,
+    "special_notes": "Save 20% with yellow coupon in-store or online",
+    "extraction_confidence": "LOW",
+    "uncertainty_flags": [
+      "price_not_visible",
+      "size_missing"
+    ],
+    "price_visibility": "not_visible",
+    "name_visibility": "fully_visible"
+  },
+  {
+    "deal_id": 4,
+    "page": 1,
+    "retailer": "HEB",
+    "product_name": "H-E-B Organics Items",
+    "brand": "H-E-B",
+    "category": "PRODUCE",
+    "price": {
+      "amount": null,
+      "unit": null,
+      "display": null,
+      "is_multibuy": false,
+      "multibuy_details": null,
+      "original_price": null,
+      "savings_amount": 3,
+      "savings_percent": null,
+      "price_per_unit": null
+    },
+    "size_quantity": null,
+    "conditions": {
+      "requires_card": false,
+      "requires_digital_coupon": false,
+      "requires_membership": false,
+      "purchase_limit": null,
+      "multi_purchase_required": true,
+      "valid_dates": "01/14-01/20"
+    },
+    "promotion_type": "standard_sale",
+    "promotion_group_id": null,
+    "special_notes": "Save $3 off your basket with yellow coupon in-store or online",
+    "extraction_confidence": "LOW",
+    "uncertainty_flags": [
+      "price_not_visible",
+      "size_missing"
+    ],
+    "price_visibility": "not_visible",
+    "name_visibility": "fully_visible"
+  },
+  {
+    "deal_id": 5,
+    "page": 1,
+    "retailer": "HEB",
+    "product_name": "H-E-B Vitamins, Minerals, Supplements, or Probiotics",
+    "brand": "H-E-B",
+    "category": "HEALTH_BEAUTY",
+    "price": {
+      "amount": null,
+      "unit": null,
+      "display": null,
+      "is_multibuy": false,
+      "multibuy_details": null,
+      "original_price": null,
+      "savings_amount": 5,
+      "savings_percent": null,
+      "price_per_unit": null
+    },
+    "size_quantity": null,
+    "conditions": {
+      "requires_card": false,
+      "requires_digital_coupon": false,
+      "requires_membership": false,
+      "purchase_limit": null,
+      "multi_purchase_required": true,
+      "valid_dates": "01/14-01/20"
+    },
+    "promotion_type": "standard_sale",
+    "promotion_group_id": null,
+    "special_notes": "Save $5 off your basket with yellow coupon in-store or online",
+    "extraction_confidence": "LOW",
+    "uncertainty_flags": [
+      "price_not_visible",
+      "size_missing"
+    ],
+    "price_visibility": "not_visible",
+    "name_visibility": "fully_visible"
+  },
+  {
+    "deal_id": 1,
+    "page": 2,
+    "retailer": "HEB",
+    "product_name": "H-E-B Frozen Sheet Pan Meals",
+    "brand": "H-E-B",
+    "category": "FROZEN",
+    "price": {
+      "amount": null,
+      "unit": "32 oz",
+      "display": null,
+      "is_multibuy": true,
+      "multibuy_details": {
+        "quantity_required": 2,
+        "total_cost": null,
+        "per_unit_cost": null,
+        "format": "Buy 2 Get 4 Free"
+      },
+      "original_price": null,
+      "savings_amount": null,
+      "savings_percent": null,
+      "price_per_unit": null
+    },
+    "size_quantity": "32 oz",
+    "conditions": {
+      "requires_card": false,
+      "requires_digital_coupon": false,
+      "requires_membership": false,
+      "purchase_limit": null,
+      "multi_purchase_required": true,
+      "valid_dates": null
+    },
+    "promotion_type": "multi_buy",
+    "promotion_group_id": null,
+    "special_notes": "Save more than $14 in free items",
+    "extraction_confidence": "MEDIUM",
+    "uncertainty_flags": [
+      "price_not_visible",
+      "multibuy_terms_unclear"
+    ],
+    "price_visibility": "not_visible",
+    "name_visibility": "fully_visible"
+  },
+  {
+    "deal_id": 2,
+    "page": 2,
+    "retailer": "HEB",
+    "product_name": "Central Market Frozen French Demi Baguette",
+    "brand": "Central Market",
+    "category": "BAKERY",
+    "price": {
+      "amount": null,
+      "unit": "8.5 oz",
+      "display": null,
+      "is_multibuy": true,
+      "multibuy_details": {
+        "quantity_required": 2,
+        "total_cost": null,
+        "per_unit_cost": null,
+        "format": "Buy 2 Get 4 Free"
+      },
+      "original_price": null,
+      "savings_amount": null,
+      "savings_percent": null,
+      "price_per_unit": null
+    },
+    "size_quantity": "8.5 oz",
+    "conditions": {
+      "requires_card": false,
+      "requires_digital_coupon": false,
+      "requires_membership": false,
+      "purchase_limit": null,
+      "multi_purchase_required": true,
+      "valid_dates": null
+    },
+    "promotion_type": "multi_buy",
+    "promotion_group_id": null,
+    "special_notes": "Save more than $14 in free items",
+    "extraction_confidence": "MEDIUM",
+    "uncertainty_flags": [
+      "price_not_visible",
+      "multibuy_terms_unclear"
+    ],
+    "price_visibility": "not_visible",
+    "name_visibility": "fully_visible"
+  },
+  {
+    "deal_id": 3,
+    "page": 2,
+    "retailer": "HEB",
+    "product_name": "Barilla Gluten Free, Legume or Protein+ Pasta",
+    "brand": "Barilla",
+    "category": "PANTRY",
+    "price": {
+      "amount": null,
+      "unit": "8.8 - 14.5 oz",
+      "display": null,
+      "is_multibuy": true,
+      "multibuy_details": {
+        "quantity_required": 2,
+        "total_cost": null,
+        "per_unit_cost": null,
+        "format": "Buy 2 Get 4 Free"
+      },
+      "original_price": null,
+      "savings_amount": null,
+      "savings_percent": null,
+      "price_per_unit": null
+    },
+    "size_quantity": "8.8 - 14.5 oz",
+    "conditions": {
+      "requires_card": false,
+      "requires_digital_coupon": false,
+      "requires_membership": false,
+      "purchase_limit": null,
+      "multi_purchase_required": true,
+      "valid_dates": null
+    },
+    "promotion_type": "multi_buy",
+    "promotion_group_id": null,
+    "special_notes": "Save more than $14 in free items",
+    "extraction_confidence": "MEDIUM",
+    "uncertainty_flags": [
+      "price_not_visible",
+      "multibuy_terms_unclear"
+    ],
+    "price_visibility": "not_visible",
+    "name_visibility": "fully_visible"
+  },
+  {
+    "deal_id": 4,
+    "page": 2,
+    "retailer": "HEB",
+    "product_name": "H-E-B Salad Kit",
+    "brand": "H-E-B",
+    "category": "PRODUCE",
+    "price": {
+      "amount": null,
+      "unit": "6.7 - 11 oz",
+      "display": null,
+      "is_multibuy": true,
+      "multibuy_details": {
+        "quantity_required": 2,
+        "total_cost": null,
+        "per_unit_cost": null,
+        "format": "Buy 2 Get 4 Free"
+      },
+      "original_price": null,
+      "savings_amount": null,
+      "savings_percent": null,
+      "price_per_unit": null
+    },
+    "size_quantity": "6.7 - 11 oz",
+    "conditions": {
+      "requires_card": false,
+      "requires_digital_coupon": false,
+      "requires_membership": false,
+      "purchase_limit": null,
+      "multi_purchase_required": true,
+      "valid_dates": null
+    },
+    "promotion_type": "multi_buy",
+    "promotion_group_id": null,
+    "special_notes": "Save more than $14 in free items",
+    "extraction_confidence": "MEDIUM",
+    "uncertainty_flags": [
+      "price_not_visible",
+      "multibuy_terms_unclear"
+    ],
+    "price_visibility": "not_visible",
+    "name_visibility": "fully_visible"
+  },
+  {
+    "deal_id": 5,
+    "page": 2,
+    "retailer": "HEB",
+    "product_name": "H-E-B Texas Tough Heavy Duty Aluminum Foil",
+    "brand": "H-E-B",
+    "category": "HOUSEHOLD",
+    "price": {
+      "amount": null,
+      "unit": "37.5 sq ft",
+      "display": null,
+      "is_multibuy": true,
+      "multibuy_details": {
+        "quantity_required": 2,
+        "total_cost": null,
+        "per_unit_cost": null,
+        "format": "Buy 2 Get 4 Free"
+      },
+      "original_price": null,
+      "savings_amount": null,
+      "savings_percent": null,
+      "price_per_unit": null
+    },
+    "size_quantity": "37.5 sq ft",
+    "conditions": {
+      "requires_card": false,
+      "requires_digital_coupon": false,
+      "requires_membership": false,
+      "purchase_limit": null,
+      "multi_purchase_required": true,
+      "valid_dates": null
+    },
+    "promotion_type": "multi_buy",
+    "promotion_group_id": null,
+    "special_notes": "Save more than $14 in free items",
+    "extraction_confidence": "MEDIUM",
+    "uncertainty_flags": [
+      "price_not_visible",
+      "multibuy_terms_unclear"
+    ],
+    "price_visibility": "not_visible",
+    "name_visibility": "fully_visible"
+  },
+  {
+    "deal_id": 6,
+    "page": 2,
+    "retailer": "HEB",
+    "product_name": "H-E-B Thin Potato Chips",
+    "brand": "H-E-B",
+    "category": "SNACKS",
+    "price": {
+      "amount": null,
+      "unit": "7 - 9 oz",
+      "display": null,
+      "is_multibuy": true,
+      "multibuy_details": {
+        "quantity_required": 2,
+        "total_cost": null,
+        "per_unit_cost": null,
+        "format": "Buy 2 Get Free"
+      },
+      "original_price": null,
+      "savings_amount": null,
+      "savings_percent": null,
+      "price_per_unit": null
+    },
+    "size_quantity": "7 - 9 oz",
+    "conditions": {
+      "requires_card": false,
+      "requires_digital_coupon": false,
+      "requires_membership": false,
+      "purchase_limit": null,
+      "multi_purchase_required": true,
+      "valid_dates": null
+    },
+    "promotion_type": "multi_buy",
+    "promotion_group_id": null,
+    "special_notes": "Save up to $3.28",
+    "extraction_confidence": "MEDIUM",
+    "uncertainty_flags": [
+      "price_not_visible",
+      "multibuy_terms_unclear"
+    ],
+    "price_visibility": "not_visible",
+    "name_visibility": "fully_visible"
+  },
+  {
+    "deal_id": 7,
+    "page": 2,
+    "retailer": "HEB",
+    "product_name": "The Cowboy Cookie by H-E-B",
+    "brand": "H-E-B",
+    "category": "BAKERY",
+    "price": {
+      "amount": null,
+      "unit": "12.4 oz",
+      "display": null,
+      "is_multibuy": true,
+      "multibuy_details": {
+        "quantity_required": 2,
+        "total_cost": null,
+        "per_unit_cost": null,
+        "format": "Buy 2 Get Free"
+      },
+      "original_price": null,
+      "savings_amount": null,
+      "savings_percent": null,
+      "price_per_unit": null
+    },
+    "size_quantity": "12.4 oz",
+    "conditions": {
+      "requires_card": false,
+      "requires_digital_coupon": false,
+      "requires_membership": false,
+      "purchase_limit": null,
+      "multi_purchase_required": true,
+      "valid_dates": null
+    },
+    "promotion_type": "multi_buy",
+    "promotion_group_id": null,
+    "special_notes": "Save up to $3.28",
+    "extraction_confidence": "MEDIUM",
+    "uncertainty_flags": [
+      "price_not_visible",
+      "multibuy_terms_unclear"
+    ],
+    "price_visibility": "not_visible",
+    "name_visibility": "fully_visible"
+  },
+  {
+    "deal_id": 8,
+    "page": 2,
+    "retailer": "HEB",
+    "product_name": "Mini Monster Cookie by H-E-B",
+    "brand": "H-E-B",
+    "category": "BAKERY",
+    "price": {
+      "amount": null,
+      "unit": "12.85 oz",
+      "display": null,
+      "is_multibuy": true,
+      "multibuy_details": {
+        "quantity_required": 2,
+        "total_cost": null,
+        "per_unit_cost": null,
+        "format": "Buy 2 Get Free"
+      },
+      "original_price": null,
+      "savings_amount": null,
+      "savings_percent": null,
+      "price_per_unit": null
+    },
+    "size_quantity": "12.85 oz",
+    "conditions": {
+      "requires_card": false,
+      "requires_digital_coupon": false,
+      "requires_membership": false,
+      "purchase_limit": null,
+      "multi_purchase_required": true,
+      "valid_dates": null
+    },
+    "promotion_type": "multi_buy",
+    "promotion_group_id": null,
+    "special_notes": "Save up to $3.28",
+    "extraction_confidence": "MEDIUM",
+    "uncertainty_flags": [
+      "price_not_visible",
+      "multibuy_terms_unclear"
+    ],
+    "price_visibility": "not_visible",
+    "name_visibility": "fully_visible"
+  },
+  {
+    "deal_id": 9,
+    "page": 2,
+    "retailer": "HEB",
+    "product_name": "Heritage Ranch by H-E-B Baked Dog Snacks",
+    "brand": "H-E-B",
+    "category": "SNACKS",
+    "price": {
+      "amount": null,
+      "unit": "10.6 oz",
+      "display": null,
+      "is_multibuy": true,
+      "multibuy_details": {
+        "quantity_required": 2,
+        "total_cost": null,
+        "per_unit_cost": null,
+        "format": "Buy 2 Get Free"
+      },
+      "original_price": null,
+      "savings_amount": null,
+      "savings_percent": null,
+      "price_per_unit": null
+    },
+    "size_quantity": "10.6 oz",
+    "conditions": {
+      "requires_card": false,
+      "requires_digital_coupon": false,
+      "requires_membership": false,
+      "purchase_limit": null,
+      "multi_purchase_required": true,
+      "valid_dates": null
+    },
+    "promotion_type": "multi_buy",
+    "promotion_group_id": null,
+    "special_notes": "Save up to $2.98",
+    "extraction_confidence": "MEDIUM",
+    "uncertainty_flags": [
+      "price_not_visible",
+      "multibuy_terms_unclear"
+    ],
+    "price_visibility": "not_visible",
+    "name_visibility": "fully_visible"
+  },
+  {
+    "deal_id": 10,
+    "page": 2,
+    "retailer": "HEB",
+    "product_name": "H-E-B Made in Texas Peanut Butter",
+    "brand": "H-E-B",
+    "category": "PANTRY",
+    "price": {
+      "amount": null,
+      "unit": "18 oz",
+      "display": null,
+      "is_multibuy": false,
+      "multibuy_details": null,
+      "original_price": null,
+      "savings_amount": null,
+      "savings_percent": null,
+      "price_per_unit": null
+    },
+    "size_quantity": "18 oz",
+    "conditions": {
+      "requires_card": false,
+      "requires_digital_coupon": false,
+      "requires_membership": false,
+      "purchase_limit": null,
+      "multi_purchase_required": false,
+      "valid_dates": null
+    },
+    "promotion_type": null,
+    "promotion_group_id": null,
+    "special_notes": "Assorted varieties",
+    "extraction_confidence": "MEDIUM",
+    "uncertainty_flags": [
+      "price_not_visible"
+    ],
+    "price_visibility": "not_visible",
+    "name_visibility": "fully_visible"
+  },
+  {
+    "deal_id": 11,
+    "page": 2,
+    "retailer": "HEB",
+    "product_name": "H-E-B Texas Corn Chips or Dippers",
+    "brand": "H-E-B",
+    "category": "SNACKS",
+    "price": {
+      "amount": null,
+      "unit": "10.5 - 15 oz",
+      "display": null,
+      "is_multibuy": true,
+      "multibuy_details": {
+        "quantity_required": 2,
+        "total_cost": null,
+        "per_unit_cost": null,
+        "format": "Buy 2 Get Free"
+      },
+      "original_price": null,
+      "savings_amount": null,
+      "savings_percent": null,
+      "price_per_unit": null
+    },
+    "size_quantity": "10.5 - 15 oz",
+    "conditions": {
+      "requires_card": false,
+      "requires_digital_coupon": false,
+      "requires_membership": false,
+      "purchase_limit": null,
+      "multi_purchase_required": true,
+      "valid_dates": null
+    },
+    "promotion_type": "multi_buy",
+    "promotion_group_id": null,
+    "special_notes": "Save up to $2.98",
+    "extraction_confidence": "MEDIUM",
+    "uncertainty_flags": [
+      "price_not_visible",
+      "multibuy_terms_unclear"
+    ],
+    "price_visibility": "not_visible",
+    "name_visibility": "fully_visible"
+  },
+  {
+    "deal_id": 12,
+    "page": 2,
+    "retailer": "HEB",
+    "product_name": "H-E-B Bean Dip",
+    "brand": "H-E-B",
+    "category": "SNACKS",
+    "price": {
+      "amount": null,
+      "unit": "9 oz",
+      "display": null,
+      "is_multibuy": true,
+      "multibuy_details": {
+        "quantity_required": 2,
+        "total_cost": null,
+        "per_unit_cost": null,
+        "format": "Buy 2 Get Free"
+      },
+      "original_price": null,
+      "savings_amount": null,
+      "savings_percent": null,
+      "price_per_unit": null
+    },
+    "size_quantity": "9 oz",
+    "conditions": {
+      "requires_card": false,
+      "requires_digital_coupon": false,
+      "requires_membership": false,
+      "purchase_limit": null,
+      "multi_purchase_required": true,
+      "valid_dates": null
+    },
+    "promotion_type": "multi_buy",
+    "promotion_group_id": null,
+    "special_notes": "Save up to $2.98",
+    "extraction_confidence": "MEDIUM",
+    "uncertainty_flags": [
+      "price_not_visible",
+      "multibuy_terms_unclear"
+    ],
+    "price_visibility": "not_visible",
+    "name_visibility": "fully_visible"
+  },
+  {
+    "deal_id": 13,
+    "page": 2,
+    "retailer": "HEB",
+    "product_name": "H-E-B Lone Stars Cheddar Baked Snack Crackers",
+    "brand": "H-E-B",
+    "category": "SNACKS",
+    "price": {
+      "amount": null,
+      "unit": "40 ct",
+      "display": null,
+      "is_multibuy": true,
+      "multibuy_details": {
+        "quantity_required": 2,
+        "total_cost": null,
+        "per_unit_cost": null,
+        "format": "Buy 2 Get Free"
+      },
+      "original_price": null,
+      "savings_amount": null,
+      "savings_percent": null,
+      "price_per_unit": null
+    },
+    "size_quantity": "40 ct",
+    "conditions": {
+      "requires_card": false,
+      "requires_digital_coupon": false,
+      "requires_membership": false,
+      "purchase_limit": null,
+      "multi_purchase_required": true,
+      "valid_dates": null
+    },
+    "promotion_type": "multi_buy",
+    "promotion_group_id": null,
+    "special_notes": "Save up to $2.48",
+    "extraction_confidence": "MEDIUM",
+    "uncertainty_flags": [
+      "price_not_visible",
+      "multibuy_terms_unclear"
+    ],
+    "price_visibility": "not_visible",
+    "name_visibility": "fully_visible"
+  },
+  {
+    "deal_id": 14,
+    "page": 2,
+    "retailer": "HEB",
+    "product_name": "H-E-Buddy Grahams",
+    "brand": "H-E-B",
+    "category": "SNACKS",
+    "price": {
+      "amount": null,
+      "unit": "10 - 12 oz",
+      "display": null,
+      "is_multibuy": false,
+      "multibuy_details": null,
+      "original_price": null,
+      "savings_amount": null,
+      "savings_percent": null,
+      "price_per_unit": null
+    },
+    "size_quantity": "10 - 12 oz",
+    "conditions": {
+      "requires_card": false,
+      "requires_digital_coupon": false,
+      "requires_membership": false,
+      "purchase_limit": null,
+      "multi_purchase_required": false,
+      "valid_dates": null
+    },
+    "promotion_type": null,
+    "promotion_group_id": null,
+    "special_notes": "Assorted varieties",
+    "extraction_confidence": "MEDIUM",
+    "uncertainty_flags": [
+      "price_not_visible"
+    ],
+    "price_visibility": "not_visible",
+    "name_visibility": "fully_visible"
+  },
+  {
+    "deal_id": 1,
+    "page": 2,
+    "retailer": "HEB",
+    "product_name": "H-E-B Our Finest Invent-A-Size Paper Towels",
+    "brand": "H-E-B",
+    "category": "HOUSEHOLD",
+    "price": {
+      "amount": null,
+      "unit": null,
+      "display": null,
+      "is_multibuy": false,
+      "multibuy_details": null,
+      "original_price": null,
+      "savings_amount": 1,
+      "savings_percent": null,
+      "price_per_unit": null
+    },
+    "size_quantity": "12 double or 6 triple rolls",
+    "conditions": {
+      "requires_card": false,
+      "requires_digital_coupon": false,
+      "requires_membership": false,
+      "purchase_limit": null,
+      "multi_purchase_required": false,
+      "valid_dates": null
+    },
+    "promotion_type": "standard_sale",
+    "promotion_group_id": null,
+    "special_notes": "Save $1 with yellow coupon in-store or online",
+    "extraction_confidence": "MEDIUM",
+    "uncertainty_flags": [
+      "price_not_visible"
+    ],
+    "price_visibility": "not_visible",
+    "name_visibility": "fully_visible"
+  },
+  {
+    "deal_id": 2,
+    "page": 2,
+    "retailer": "HEB",
+    "product_name": "Huggies Diapers, Wipes, Pull-Ups, Goodnites, or Little Swimmers Items",
+    "brand": "Huggies",
+    "category": "HEALTH_BEAUTY",
+    "price": {
+      "amount": null,
+      "unit": null,
+      "display": null,
+      "is_multibuy": false,
+      "multibuy_details": null,
+      "original_price": null,
+      "savings_amount": 10,
+      "savings_percent": null,
+      "price_per_unit": null
+    },
+    "size_quantity": null,
+    "conditions": {
+      "requires_card": false,
+      "requires_digital_coupon": false,
+      "requires_membership": false,
+      "purchase_limit": null,
+      "multi_purchase_required": false,
+      "valid_dates": null
+    },
+    "promotion_type": "standard_sale",
+    "promotion_group_id": null,
+    "special_notes": "Save $10 off your basket when you buy $40 of Huggies items with yellow coupon in-store or online",
+    "extraction_confidence": "MEDIUM",
+    "uncertainty_flags": [
+      "price_not_visible"
+    ],
+    "price_visibility": "not_visible",
+    "name_visibility": "fully_visible"
+  },
+  {
+    "deal_id": 3,
+    "page": 2,
+    "retailer": "HEB",
+    "product_name": "Ice Breakers Ice Cubes Gum Bottle",
+    "brand": "Ice Breakers",
+    "category": "SNACKS",
+    "price": {
+      "amount": null,
+      "unit": null,
+      "display": null,
+      "is_multibuy": false,
+      "multibuy_details": null,
+      "original_price": null,
+      "savings_amount": null,
+      "savings_percent": 25,
+      "price_per_unit": null
+    },
+    "size_quantity": "40 ct",
+    "conditions": {
+      "requires_card": false,
+      "requires_digital_coupon": false,
+      "requires_membership": false,
+      "purchase_limit": null,
+      "multi_purchase_required": false,
+      "valid_dates": null
+    },
+    "promotion_type": "standard_sale",
+    "promotion_group_id": null,
+    "special_notes": "Save 25% with yellow coupon in-store or online",
+    "extraction_confidence": "MEDIUM",
+    "uncertainty_flags": [
+      "price_not_visible"
+    ],
+    "price_visibility": "not_visible",
+    "name_visibility": "fully_visible"
+  },
+  {
+    "deal_id": 4,
+    "page": 2,
+    "retailer": "HEB",
+    "product_name": "Valentine's Day Plush Items",
+    "brand": null,
+    "category": "HOUSEHOLD",
+    "price": {
+      "amount": null,
+      "unit": null,
+      "display": null,
+      "is_multibuy": false,
+      "multibuy_details": null,
+      "original_price": null,
+      "savings_amount": null,
+      "savings_percent": 20,
+      "price_per_unit": null
+    },
+    "size_quantity": null,
+    "conditions": {
+      "requires_card": false,
+      "requires_digital_coupon": false,
+      "requires_membership": false,
+      "purchase_limit": null,
+      "multi_purchase_required": false,
+      "valid_dates": null
+    },
+    "promotion_type": "standard_sale",
+    "promotion_group_id": null,
+    "special_notes": "Save 20% with yellow coupon in-store or online",
+    "extraction_confidence": "MEDIUM",
+    "uncertainty_flags": [
+      "price_not_visible"
+    ],
+    "price_visibility": "not_visible",
+    "name_visibility": "fully_visible"
+  },
+  {
+    "deal_id": 5,
+    "page": 2,
+    "retailer": "HEB",
+    "product_name": "H-E-B Texas Tough Food Storage Containers",
+    "brand": "H-E-B",
+    "category": "HOUSEHOLD",
+    "price": {
+      "amount": null,
+      "unit": null,
+      "display": null,
+      "is_multibuy": true,
+      "multibuy_details": {
+        "quantity_required": 2,
+        "total_cost": null,
+        "per_unit_cost": null,
+        "format": "Buy two, get 3rd free"
+      },
+      "original_price": null,
+      "savings_amount": null,
+      "savings_percent": null,
+      "price_per_unit": null
+    },
+    "size_quantity": "2 - 4 ct",
+    "conditions": {
+      "requires_card": false,
+      "requires_digital_coupon": false,
+      "requires_membership": false,
+      "purchase_limit": null,
+      "multi_purchase_required": true,
+      "valid_dates": null
+    },
+    "promotion_type": "multi_buy",
+    "promotion_group_id": null,
+    "special_notes": "Get 3rd free with yellow coupon in-store or online",
+    "extraction_confidence": "MEDIUM",
+    "uncertainty_flags": [
+      "price_not_visible"
+    ],
+    "price_visibility": "not_visible",
+    "name_visibility": "fully_visible"
+  }
+]

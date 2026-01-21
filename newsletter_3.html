@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Your Weekly Prox Deals</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Fonts (Aesop-ish headline + clean sans body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --prox-green: #98c569; /* from your old code */
+        --prox-dark: #09271a;
+        --paper: #f3f1e6;
+        --ink: #111111;
+        --muted: #6b6b6b;
+        --divider: #e7e2d8;
+        --chip-bg: #e7f5ec; /* soft green tint for chips */
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: var(--paper);
+        font-family: Inter, Arial, sans-serif;
+      }
+      img {
+        border: 0;
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+      a {
+        text-decoration: none;
+      }
+
+      .wrapper {
+        width: 100%;
+        background-color: var(--paper);
+        padding: 20px 0;
+      }
+      .container {
+        max-width: 640px;
+        margin: 0 auto;
+        background-color: var(--prox-dark);
+        border-radius: 12px;
+        overflow: hidden;
+        color: #ffffff;
+      }
+
+      /* NEW: top meta row like your screenshot */
+      .top-meta {
+        background: #ffffff;
+        color: var(--ink);
+        padding: 10px 16px;
+        font-size: 12px;
+      }
+      .top-meta table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      .top-meta .left {
+        color: #3b3b3b;
+        font-weight: 500;
+      }
+      .top-meta .right {
+        text-align: right;
+        color: #3b3b3b;
+      }
+      .top-meta strong {
+        color: var(--ink);
+        font-weight: 700;
+      }
+
+      /* Prox banner (from old code) */
+      .banner {
+        width: 100%;
+        max-width: 640px;
+        display: block;
+      }
+
+      /* HERO */
+      .header {
+        padding: 18px 24px 12px 24px;
+        text-align: left;
+      }
+      .header-title {
+        font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 1.05;
+        color: #ffffff;
+        margin: 0 0 8px 0;
+      }
+      .header-subtitle {
+        font-size: 14px;
+        line-height: 1.8;
+        color: rgba(255, 255, 255, 0.82);
+        margin: 0;
+        max-width: 560px;
+      }
+
+      /* CTA row (View all weekly deals) */
+      .cta-wrapper {
+        padding: 12px 24px 20px 24px;
+      }
+      .cta-button {
+        display: inline-block;
+        background-color: var(--prox-green);
+        color: var(--prox-dark);
+        padding: 12px 18px;
+        border-radius: 10px;
+        font-weight: 800;
+        font-size: 13px;
+        text-align: center;
+      }
+      .cta-secondary {
+        display: inline-block;
+        margin-left: 12px;
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.85);
+        text-decoration: underline;
+      }
+
+      /* Inner white content */
+      .inner {
+        background-color: #ffffff;
+        color: #222222;
+        padding: 20px 24px 28px 24px;
+      }
+
+      /* NEW: stat chips row like your screenshot */
+      .chips {
+        margin: 0 0 16px 0;
+      }
+      .chips table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 10px;
+      }
+      .chip {
+        background: var(--chip-bg);
+        border-radius: 10px;
+        padding: 12px 12px;
+        vertical-align: top;
+      }
+      .chip-title {
+        font-size: 12px;
+        color: #3b3b3b;
+        font-weight: 700;
+        margin: 0 0 6px 0;
+      }
+      .chip-body {
+        font-size: 13px;
+        color: var(--ink);
+        font-weight: 700;
+        margin: 0;
+        line-height: 1.4;
+      }
+
+      .divider {
+        border-top: 1px solid var(--divider);
+        margin: 18px 0;
+      }
+
+      /* Comparison block */
+      .compare-title {
+        font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+        font-size: 26px;
+        font-weight: 600;
+        color: var(--ink);
+        margin: 0 0 6px 0;
+      }
+      .compare-subtitle {
+        font-size: 13px;
+        color: #555555;
+        line-height: 1.7;
+        margin: 0 0 12px 0;
+      }
+      .compare-table {
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+        font-size: 13px;
+      }
+      .compare-table th {
+        text-align: left;
+        font-size: 12px;
+        color: var(--muted);
+        font-weight: 700;
+        padding: 10px 8px;
+        border-bottom: 1px solid var(--divider);
+      }
+      .compare-table td {
+        padding: 10px 8px;
+        border-bottom: 1px solid #f0ece4;
+        color: var(--ink);
+      }
+      .compare-table td.price {
+        text-align: right;
+        white-space: nowrap;
+      }
+      .best {
+        color: var(--prox-green);
+        font-weight: 900;
+      }
+
+      /* Retailer section */
+      .retailer-section {
+        margin-bottom: 22px;
+        border-radius: 10px;
+        border: 1px solid #e2e2e2;
+        padding: 18px 14px 10px 14px;
+        background-color: #ffffff;
+      }
+      .retailer-tag {
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--prox-green);
+        font-weight: 800;
+        margin-bottom: 6px;
+      }
+      .section-header {
+        margin: 0 0 8px 0;
+        font-size: 22px;
+        font-weight: 700;
+        color: var(--prox-dark);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .retailer-logo {
+        max-height: 28px;
+      }
+      .section-subtitle {
+        font-size: 13px;
+        color: #555555;
+        margin: 0 0 14px 0;
+        line-height: 1.7;
+      }
+
+      /* 2-up deal grid (from old code) */
+      .deal-grid {
+        width: 100%;
+        border-spacing: 0;
+        border-collapse: collapse;
+      }
+      .deal-column {
+        width: 50%;
+        padding: 12px 6px 12px 6px;
+        vertical-align: top;
+      }
+      .deal-card {
+        border-radius: 10px;
+        border: 1px solid #e2e2e2;
+        padding: 10px;
+        background-color: #ffffff;
+      }
+      .deal-image-wrapper {
+        margin-bottom: 8px;
+        text-align: center;
+        border-radius: 8px;
+        overflow: hidden;
+        background-color: #f2f2f2;
+      }
+      .deal-name {
+        font-size: 14px;
+        font-weight: 800;
+        color: var(--prox-dark);
+        margin: 0 0 4px 0;
+      }
+      .deal-size {
+        font-size: 12px;
+        color: #666666;
+        margin: 0 0 6px 0;
+      }
+      .deal-save {
+        font-size: 12px;
+        font-weight: 800;
+        color: #bf4b0d;
+        margin: 0 0 6px 0;
+      }
+      .deal-prices {
+        font-size: 13px;
+        margin: 0;
+      }
+      .deal-regular {
+        color: #999999;
+        text-decoration: line-through;
+        margin-right: 6px;
+      }
+      .deal-sale {
+        color: var(--prox-dark);
+        font-weight: 900;
+      }
+
+      /* Footer (from old code) */
+      .footer {
+        background-color: #f0f0f0;
+        padding: 18px 24px 24px 24px;
+        text-align: center;
+        font-size: 11px;
+        color: #666666;
+      }
+      .footer a {
+        color: #666666;
+        text-decoration: underline;
+      }
+
+      @media only screen and (max-width: 600px) {
+        .container {
+          border-radius: 0;
+        }
+        .header,
+        .cta-wrapper {
+          padding-left: 16px;
+          padding-right: 16px;
+        }
+        .inner {
+          padding: 18px 16px 24px 16px;
+        }
+        .deal-column {
+          display: block;
+          width: 100%;
+        }
+        .header-title {
+          font-size: 34px;
+        }
+        .chips table {
+          border-spacing: 8px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+        <tr>
+          <td align="center">
+            <div class="container">
+
+              <!-- NEW: top meta row (like your screenshot) -->
+              <div class="top-meta">
+                <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <td class="left">Prox Deals</td>
+                    <td class="right">
+                      Week of <strong>Mar 04</strong> &nbsp;•&nbsp; ZIP <strong>94107</strong>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+
+              <!-- Prox banner/logo (FROM OLD CODE) -->
+              <img
+                src="https://i.imgur.com/hRy2YXG.png"
+                alt="Prox Weekly Deals"
+                class="banner"
+                style="width:100%; max-width:640px;"
+              />
+
+              <!-- HERO -->
+              <div class="header">
+                <h1 class="header-title">Weekly grocery finds</h1>
+                <p class="header-subtitle">
+                  Hi ${displayName}, here are the top deals this week across your favorite stores.
+                  We picked these for strong unit pricing and everyday usefulness.
+                </p>
+              </div>
+
+              <!-- CTA -->
+              <div class="cta-wrapper">
+                <a
+                  href="https://joinprox.com/deals"
+                  class="cta-button"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View All Weekly Deals
+                </a>
+
+                <a
+                  href="https://joinprox.com/deals"
+                  class="cta-secondary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View in browser
+                </a>
+              </div>
+
+              <!-- INNER -->
+              <div class="inner">
+
+                <!-- NEW: Stat chips row (like your screenshot) -->
+                <div class="chips">
+                  <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td class="chip" width="50%">
+                        <p class="chip-title">Retailers</p>
+                        <p class="chip-body">Vons • Ralphs • Smart &amp; Final</p>
+                      </td>
+                      <td class="chip" width="25%">
+                        <p class="chip-title">Deals picked</p>
+                        <p class="chip-body">18 deals</p>
+                      </td>
+                      <td class="chip" width="25%">
+                        <p class="chip-title">Best window</p>
+                        <p class="chip-body">Tue–Thu mornings</p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+
+                <!-- Comparison -->
+                <h2 class="compare-title">Quick staple price check</h2>
+                <p class="compare-subtitle">
+                  Lowest advertised prices we found across your three retailers (unit-normalized when possible).
+                </p>
+
+                <table class="compare-table" role="presentation" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <th>Item</th>
+                    <th style="text-align:right;">Vons</th>
+                    <th style="text-align:right;">Ralphs</th>
+                    <th style="text-align:right;">Smart &amp; Final</th>
+                  </tr>
+                  <tr>
+                    <td>Chicken (per lb)</td>
+                    <td class="price"><span class="best">$2.49/lb</span></td>
+                    <td class="price">$2.99/lb</td>
+                    <td class="price">$3.49/lb</td>
+                  </tr>
+                  <tr>
+                    <td>Beef (per lb)</td>
+                    <td class="price">$5.99/lb</td>
+                    <td class="price"><span class="best">$5.49/lb</span></td>
+                    <td class="price">$6.99/lb</td>
+                  </tr>
+                  <tr>
+                    <td>Apples</td>
+                    <td class="price">$1.49/lb</td>
+                    <td class="price">$1.99/lb</td>
+                    <td class="price"><span class="best">$1.29/lb</span></td>
+                  </tr>
+                </table>
+
+                <div class="divider"></div>
+
+                <!-- ================= RETAILER 1: Vons ================= -->
+                <div class="retailer-section">
+                  <div class="retailer-tag">Retailer 1 of 3</div>
+                  <h2 class="section-header">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Vons_logo.svg"
+                      alt="Vons logo"
+                      class="retailer-logo"
+                    />
+                  </h2>
+                  <p class="section-subtitle">Top 6 deals this week at Vons near you.</p>
+
+                  <table class="deal-grid" role="presentation" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td class="deal-column">
+                        <div class="deal-card">
+                          <div class="deal-image-wrapper">
+                            <img src="https://link.gelsons.com/custloads/760906850/md_1640571.jpg" alt="Organic Strawberries" />
+                          </div>
+                          <p class="deal-name">Organic Strawberries</p>
+                          <p class="deal-size">1 lb</p>
+                          <p class="deal-save">Save $1.00</p>
+                          <p class="deal-prices">
+                            <span class="deal-regular">$5.99</span>
+                            <span class="deal-sale">$4.99</span>
+                          </p>
+                        </div>
+                      </td>
+
+                      <td class="deal-column">
+                        <div class="deal-card">
+                          <div class="deal-image-wrapper">
+                            <img src="https://link.gelsons.com/custloads/760906850/md_1636470.png" alt="Cold Brew Coffee" />
+                          </div>
+                          <p class="deal-name">Cold Brew Coffee</p>
+                          <p class="deal-size">64 oz</p>
+                          <p class="deal-save">Save $1.00</p>
+                          <p class="deal-prices">
+                            <span class="deal-regular">$6.99</span>
+                            <span class="deal-sale">$5.99</span>
+                          </p>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="deal-column">
+                        <div class="deal-card">
+                          <div class="deal-image-wrapper">
+                            <img src="https://link.gelsons.com/custloads/760906850/md_1636471.png" alt="Greek Yogurt Cups" />
+                          </div>
+                          <p class="deal-name">Greek Yogurt Cups</p>
+                          <p class="deal-size">6 oz</p>
+                          <p class="deal-save">Save $2.00</p>
+                          <p class="deal-prices">
+                            <span class="deal-regular">$7.99</span>
+                            <span class="deal-sale">$5.99</span>
+                          </p>
+                        </div>
+                      </td>
+
+                      <td class="deal-column">
+                        <div class="deal-card">
+                          <div class="deal-image-wrapper">
+                            <img src="https://link.gelsons.com/custloads/760906850/md_1636469.png" alt="Sparkling Water Variety Pack" />
+                          </div>
+                          <p class="deal-name">Sparkling Water Variety Pack</p>
+                          <p class="deal-size">3-pack</p>
+                          <p class="deal-save">Save $1.00</p>
+                          <p class="deal-prices">
+                            <span class="deal-regular">$7.99</span>
+                            <span class="deal-sale">$6.99</span>
+                          </p>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="deal-column">
+                        <div class="deal-card">
+                          <div class="deal-image-wrapper">
+                            <img src="https://link.gelsons.com/custloads/760906850/md_1636467.png" alt="Premium Ice Cream" />
+                          </div>
+                          <p class="deal-name">Premium Ice Cream</p>
+                          <p class="deal-size">64 oz</p>
+                          <p class="deal-save">Save $2.00</p>
+                          <p class="deal-prices">
+                            <span class="deal-regular">$8.99</span>
+                            <span class="deal-sale">$6.99</span>
+                          </p>
+                        </div>
+                      </td>
+
+                      <td class="deal-column">
+                        <div class="deal-card">
+                          <div class="deal-image-wrapper">
+                            <img src="https://link.gelsons.com/custloads/760906850/md_1636472.png" alt="Spring Water Jug" />
+                          </div>
+                          <p class="deal-name">Spring Water Jug</p>
+                          <p class="deal-size">10 Gal</p>
+                          <p class="deal-save">Save $1.00</p>
+                          <p class="deal-prices">
+                            <span class="deal-regular">$7.99</span>
+                            <span class="deal-sale">$6.99</span>
+                          </p>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+
+                <!-- ================= RETAILER 2: Ralphs ================= -->
+                <div class="retailer-section">
+                  <div class="retailer-tag">Retailer 2 of 3</div>
+                  <h2 class="section-header">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Ralphs.svg/1024px-Ralphs.svg.png"
+                      alt="Ralphs logo"
+                      class="retailer-logo"
+                    />
+                  </h2>
+                  <p class="section-subtitle">Top 6 deals this week at Ralphs.</p>
+
+                  <table class="deal-grid" role="presentation" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td class="deal-column">
+                        <div class="deal-card">
+                          <div class="deal-image-wrapper">
+                            <img src="https://link.gelsons.com/custloads/760906850/md_1636468.png" alt="Boneless Skinless Chicken Breast" />
+                          </div>
+                          <p class="deal-name">Boneless Skinless Chicken Breast</p>
+                          <p class="deal-size">1 lb</p>
+                          <p class="deal-save">Save $1.00</p>
+                          <p class="deal-prices">
+                            <span class="deal-regular">$6.99</span>
+                            <span class="deal-sale">$5.99</span>
+                          </p>
+                        </div>
+                      </td>
+
+                      <td class="deal-column">
+                        <div class="deal-card">
+                          <div class="deal-image-wrapper">
+                            <img src="https://link.gelsons.com/custloads/760906850/md_1636473.png" alt="Extra Virgin Olive Oil" />
+                          </div>
+                          <p class="deal-name">Extra Virgin Olive Oil</p>
+                          <p class="deal-size">64 oz</p>
+                          <p class="deal-save">Save $2.00</p>
+                          <p class="deal-prices">
+                            <span class="deal-regular">$8.99</span>
+                            <span class="deal-sale">$6.99</span>
+                          </p>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="deal-column">
+                        <div class="deal-card">
+                          <div class="deal-image-wrapper">
+                            <img src="https://link.gelsons.com/custloads/760906850/md_1636474.png" alt="Frozen Veggie Mix" />
+                          </div>
+                          <p class="deal-name">Frozen Veggie Mix</p>
+                          <p class="deal-size">3-pack</p>
+                          <p class="deal-save">Save $1.00</p>
+                          <p class="deal-prices">
+                            <span class="deal-regular">$7.99</span>
+                            <span class="deal-sale">$6.99</span>
+                          </p>
+                        </div>
+                      </td>
+
+                      <td class="deal-column">
+                        <div class="deal-card">
+                          <div class="deal-image-wrapper">
+                            <img src="https://link.gelsons.com/custloads/760906850/md_1636475.png" alt="Cold Pressed Juice" />
+                          </div>
+                          <p class="deal-name">Cold Pressed Juice</p>
+                          <p class="deal-size">6 oz</p>
+                          <p class="deal-save">Save $1.00</p>
+                          <p class="deal-prices">
+                            <span class="deal-regular">$5.99</span>
+                            <span class="deal-sale">$4.99</span>
+                          </p>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="deal-column">
+                        <div class="deal-card">
+                          <div class="deal-image-wrapper">
+                            <img src="https://link.gelsons.com/custloads/760906850/md_1640571.jpg" alt="Organic Blueberries" />
+                          </div>
+                          <p class="deal-name">Organic Blueberries</p>
+                          <p class="deal-size">6 oz</p>
+                          <p class="deal-save">Save $2.00</p>
+                          <p class="deal-prices">
+                            <span class="deal-regular">$7.99</span>
+                            <span class="deal-sale">$5.99</span>
+                          </p>
+                        </div>
+                      </td>
+
+                      <td class="deal-column">
+                        <div class="deal-card">
+                          <div class="deal-image-wrapper">
+                            <img src="https://link.gelsons.com/custloads/760906850/md_1636470.png" alt="Cold Brew Concentrate" />
+                          </div>
+                          <p class="deal-name">Cold Brew Concentrate</p>
+                          <p class="deal-size">64 oz</p>
+                          <p class="deal-save">Save $1.00</p>
+                          <p class="deal-prices">
+                            <span class="deal-regular">$7.99</span>
+                            <span class="deal-sale">$6.99</span>
+                          </p>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+
+                <!-- ================= RETAILER 3: Smart & Final ================= -->
+                <div class="retailer-section">
+                  <div class="retailer-tag">Retailer 3 of 3</div>
+                  <h2 class="section-header">
+                    <img
+                      src="https://play-lh.googleusercontent.com/fCa9uxi0baNL8iFHqLSWP8B3kti5OZL0sbDoCSZkQOg1e2OzRuKbkVjGlHlNl1j1h_0"
+                      alt="Smart &amp; Final logo"
+                      class="retailer-logo"
+                    />
+                  </h2>
+                  <p class="section-subtitle">Top 6 deals this week at Smart &amp; Final.</p>
+
+                  <table class="deal-grid" role="presentation" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td class="deal-column">
+                        <div class="deal-card">
+                          <div class="deal-image-wrapper">
+                            <img src="https://link.gelsons.com/custloads/760906850/md_1636471.png" alt="Family Pack Ground Beef" />
+                          </div>
+                          <p class="deal-name">Family Pack Ground Beef</p>
+                          <p class="deal-size">1 lb</p>
+                          <p class="deal-save">Save $2.00</p>
+                          <p class="deal-prices">
+                            <span class="deal-regular">$7.99</span>
+                            <span class="deal-sale">$5.99</span>
+                          </p>
+                        </div>
+                      </td>
+
+                      <td class="deal-column">
+                        <div class="deal-card">
+                          <div class="deal-image-wrapper">
+                            <img src="https://link.gelsons.com/custloads/760906850/md_1636469.png" alt="Seltzer Water Pack" />
+                          </div>
+                          <p class="deal-name">Seltzer Water Pack</p>
+                          <p class="deal-size">3-pack</p>
+                          <p class="deal-save">Save $1.00</p>
+                          <p class="deal-prices">
+                            <span class="deal-regular">$6.99</span>
+                            <span class="deal-sale">$5.99</span>
+                          </p>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="deal-column">
+                        <div class="deal-card">
+                          <div class="deal-image-wrapper">
+                            <img src="https://link.gelsons.com/custloads/760906850/md_1636467.png" alt="Bulk Vanilla Ice Cream" />
+                          </div>
+                          <p class="deal-name">Bulk Vanilla Ice Cream</p>
+                          <p class="deal-size">64 oz</p>
+                          <p class="deal-save">Save $2.00</p>
+                          <p class="deal-prices">
+                            <span class="deal-regular">$8.99</span>
+                            <span class="deal-sale">$6.99</span>
+                          </p>
+                        </div>
+                      </td>
+
+                      <td class="deal-column">
+                        <div class="deal-card">
+                          <div class="deal-image-wrapper">
+                            <img src="https://link.gelsons.com/custloads/760906850/md_1636472.png" alt="Purified Water Jug" />
+                          </div>
+                          <p class="deal-name">Purified Water Jug</p>
+                          <p class="deal-size">10 Gal</p>
+                          <p class="deal-save">Save $1.00</p>
+                          <p class="deal-prices">
+                            <span class="deal-regular">$7.99</span>
+                            <span class="deal-sale">$6.99</span>
+                          </p>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="deal-column">
+                        <div class="deal-card">
+                          <div class="deal-image-wrapper">
+                            <img src="https://link.gelsons.com/custloads/760906850/md_1636468.png" alt="Chicken Thighs Value Pack" />
+                          </div>
+                          <p class="deal-name">Chicken Thighs Value Pack</p>
+                          <p class="deal-size">1 lb</p>
+                          <p class="deal-save">Save $1.00</p>
+                          <p class="deal-prices">
+                            <span class="deal-regular">$6.99</span>
+                            <span class="deal-sale">$5.99</span>
+                          </p>
+                        </div>
+                      </td>
+
+                      <td class="deal-column">
+                        <div class="deal-card">
+                          <div class="deal-image-wrapper">
+                            <img src="https://link.gelsons.com/custloads/760906850/md_1636473.png" alt="House Coffee Beans" />
+                          </div>
+                          <p class="deal-name">House Coffee Beans</p>
+                          <p class="deal-size">6 oz</p>
+                          <p class="deal-save">Save $1.00</p>
+                          <p class="deal-prices">
+                            <span class="deal-regular">$5.99</span>
+                            <span class="deal-sale">$4.99</span>
+                          </p>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+
+                <!-- Closing copy -->
+                <p style="font-size: 13px; color: #333333; line-height: 1.7; margin-top: 8px;">
+                  Want us to optimize a full basket for you? Just reply to this email with your grocery list
+                  (or a receipt screenshot) and we’ll send back the cheapest store combo for this week.
+                </p>
+
+              </div>
+
+              <!-- FOOTER (with unsubscribe link preserved) -->
+              <div class="footer">
+                <p style="margin: 0 0 4px 0;">© 2025 Prox, LLC</p>
+                <p style="margin: 0 0 4px 0;">2903 Lincoln Blvd, Santa Monica, CA 90405</p>
+                <p style="margin: 8px 0 0 0;">
+                  <a
+                    href="https://joinprox.com/unsubscribe?email=${encodeURIComponent(email)}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Update your email preferences or unsubscribe here
+                  </a>
+                </p>
+              </div>
+
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
